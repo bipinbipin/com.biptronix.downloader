@@ -21,7 +21,7 @@ public class FullScript {
         String link = "https://www.youtube.com/watch?v=mBmL7iZpCb0";
         String info = obj.get_youtube_video_info(link);
         VideoInfo videoInfo = obj.parse_video_info(info);
-
+        System.out.println(info);
         //obj.download_video(videoInfo.getUrl());
         System.out.println(videoInfo.toString());
 
@@ -34,7 +34,7 @@ public class FullScript {
 
     private void ffmpeg_download_video(String url) {
         try {
-            ProcessBuilder pb = new ProcessBuilder("ffmpeg", "-i", url, "-vcodec", "copy", "-acodec", "copy", "out.mkv");
+            ProcessBuilder pb = new ProcessBuilder("ffmpeg", "-i", url, "-vcodec", "copy", "-acodec", "copy", "-y", "out.mkv");
             final Process p = pb.start();
 
             new Thread() {
