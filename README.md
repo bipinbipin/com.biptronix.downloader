@@ -45,7 +45,7 @@ process:
 
 5) download thumbnail image file
 
-   $ curl thumbnail_url > OUT.jpg
+    $ curl thumbnail_url > OUT.jpg
 
 6) attach the image to the mp3
 
