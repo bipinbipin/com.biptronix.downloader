@@ -7,7 +7,6 @@ lame
 process:
 ===========
 1) get info from youtube link
-(i.e.  https://www.youtube.com/watch?v=mBmL7iZpCb0)
 
    $ quvi dump https://www.youtube.com/watch?v=mBmL7iZpCb0
 
