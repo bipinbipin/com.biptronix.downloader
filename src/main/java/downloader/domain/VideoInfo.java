@@ -7,6 +7,7 @@ public class VideoInfo {
 
     String id;
     String title;
+    String thumbnail;
     String url;
 
     public VideoInfo() {
@@ -42,11 +43,20 @@ public class VideoInfo {
         this.url = url;
     }
 
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
     @Override
     public String toString() {
         return "VideoInfo{" +
                 "id='" + id + '\'' +
                 ", title='" + title + '\'' +
+                ", thumbnail='" + thumbnail + '\'' +
                 ", url='" + url + '\'' +
                 '}';
     }
